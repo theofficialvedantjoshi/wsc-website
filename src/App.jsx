@@ -9,27 +9,27 @@ export default function App() {
 
   const events = [
     {
-      src: "/src/assets/events/analytics.png",
+      src: "https://i.ibb.co/9rqkmTs/analytics.jpg",
       alt: "Finance Event"
     },
     {
-      src: "/src/assets/events/bse.png",
+      src: "https://i.ibb.co/CVvy5Mc/baworkshop.jpg",
       alt: "Finance Event"
     },
     {
-      src: "/src/assets/events/stock.png",
+      src: "https://i.ibb.co/0fhYQrx/bse.png",
       alt: "Finance Event"
     },
     {
-      src: "/src/assets/events/equity_research.jpg",
+      src: "https://i.ibb.co/P9X4nfc/equity-research.jpg",
       alt: "Finance Event"
     },
     {
-      src: "/src/assets/events/baworkshop.jpg",
+      src: "https://i.ibb.co/vBNG74k/stock.png",
       alt: "Finance Event"
     },
     {
-      src: "/src/assets/events/wsbc.png",
+      src: "https://i.ibb.co/wBJVn9R/wsbc.png",
       alt: "Finance Event"
     }
   ]

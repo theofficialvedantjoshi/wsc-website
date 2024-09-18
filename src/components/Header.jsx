@@ -46,10 +46,10 @@ const Header = () => {
 
   return (
     <header class="fixed w-full z-50 backdrop-blur-sm">
-      <nav class="flex items-center justify-between py-6 px-8 w-full overflow-x-hidden">
+      <nav class="flex items-center justify-between py-4 px-8 w-full overflow-x-hidden">
         <div class="flex items-center lg:ml-[16.5vw] md:ml-[16.5vw]">
           <a href="/">
-            <img class="w-[20vw] lg:w-[6vw] min-w-[7.5vw]" src="/src/assets/logo.png" alt="Wall Street Club Logo" />
+            <img class="w-[20vw] lg:w-[6vw] min-w-[7.5vw]" src="https://i.ibb.co/h8VYGd0/logo.png" alt="Wall Street Club Logo" />
           </a>
         </div>
         <div class="lg:hidden md:hidden">

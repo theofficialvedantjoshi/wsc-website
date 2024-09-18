@@ -2,15 +2,15 @@ import ImageCard from "./ImageCard"
 export default function Sessions() {
     const sessions = [
         {
-            src: "/src/assets/sessions/introtopython.png",
+            src: "https://i.ibb.co/9yHTDGr/introtopython.png",
             alt: "Finance Event"
         },
         {
-            src: "/src/assets/sessions/personal finance.png",
+            src: "https://i.ibb.co/gDgRBJy/personal-finance.png",
             alt: "Finance Event"
         },
         {
-            src: "/src/assets/sessions/financeminor.png",
+            src: "https://i.ibb.co/tXDgSkX/financeminor.png",
             alt: "Finance Event"
         }
     ]
