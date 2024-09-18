@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  animation: fadeBlackRed 10s infinite;
+  height: 100vh;
+}
+
+.bg-anim {
+  background: rgba(0, 0, 0, 1);
+  animation: fadeheader 10s infinite;
+}
+
+@keyframes fadeheader {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background: rgba(80, 5, 5, 1);
+  }
+  100% {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+/* flex items-center justify-between p-4 w-full overflow-x-hidden */
+/* Keyframes for fading from black to red and back */
+@keyframes fadeBlackRed {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: rgb(80, 5, 5); /* Dark Red */
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
