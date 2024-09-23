@@ -4,9 +4,11 @@ import { Router, Route } from '@solidjs/router';
 import './index.css';
 import App from './App';
 import Contact from './pages/Contact';
-import About from './pages/About';
 import Blogs from './pages/Blogs';
+import Events from './pages/Events';
 import { animate, scroll } from "motion";
+import Collabs from './pages/Collabs';
+import Team from './pages/Team';
 
 
 
@@ -27,9 +29,11 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() => (
   <Router>
     <Route path="/" component={App} />
+    <Route path="/events" component={Events} />
     <Route path="/contact" component={Contact} />
-    <Route path="/about" component={About} />
     <Route path="/blogs" component={Blogs} />
+    <Route path="/collabs" component={Collabs} />
+    <Route path="/team" component={Team} />
   </Router>
 ), root);
 

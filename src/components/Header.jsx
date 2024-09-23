@@ -4,11 +4,12 @@ import { onMount } from "solid-js";
 const Header = () => {
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Events", href: "/#events" },
-    { name: "Teams", href: "/#teams" },
+    { name: "Events", href: "/events" },
+    { name: "Team", href: "/team" },
+    { name: "Collabs", href: "/collabs" },
+    { name: "Alumni", href: "/alumni" },
     { name: "Blogs", href: "/blogs" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" }
+    { name: "Contact Us", href: "/contact" }
   ];
 
   const [isOpen, setIsOpen] = createSignal(false);
@@ -20,7 +21,6 @@ const Header = () => {
   };
   let body;
   let header;
-  let mbnav;
   const syncHeaderWithBody = () => {
     const bodyBgColor = window.getComputedStyle(body).backgroundColor;
     if (header && isOpen()) {
@@ -39,17 +39,17 @@ const Header = () => {
   onMount(() => {
     body = document.querySelector("body");
     header = document.querySelector("header");
+    body.style.overflowX = "hidden"; // Disable horizontal scrolling
     syncHeaderWithBody();
     window.addEventListener("scroll", handleScroll);
   });
 
-
   return (
     <header class="fixed w-full z-50 backdrop-blur-sm">
-      <nav class="flex items-center justify-between py-4 px-8 w-full overflow-x-hidden">
-        <div class="flex items-center lg:ml-[16.5vw] md:ml-[16.5vw]">
+      <nav class="flex items-center justify-between py-4 px-4 lg:px-8 w-full">
+        <div class="flex items-center lg:ml-[2vw] md:ml-[2vw]">
           <a href="/">
-            <img class="w-[20vw] lg:w-[6vw] min-w-[7.5vw]" src="https://i.ibb.co/h8VYGd0/logo.png" alt="Wall Street Club Logo" />
+            <img class="w-[20vw] lg:w-[8vw] md:w-[8vw] min-w-[6vw]" src="https://i.ibb.co/h8VYGd0/logo.png" alt="Wall Street Club Logo" />
           </a>
         </div>
         <div class="lg:hidden md:hidden">
@@ -73,7 +73,7 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex md:flex items-center text-white text-lg font-medium lg:mr-[40vw] md:mr-[60vw]">
+        <div class="hidden lg:flex md:flex items-center text-white text-lg font-medium">
           <ul class="flex items-center space-x-8">
             {navLinks.map((link) => (
               <li key={link.name}>
@@ -94,7 +94,7 @@ const Header = () => {
           </ul>
         </div>
         {isOpen() && (
-          <div class="bg-black lg:hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full mt-20">
+          <div class="bg-black lg:hidden fixed top-0 left-0 w-full mt-20">
             <ul class="flex flex-col items-center divide-y divide-gray-300">
               {navLinks.map((link) => (
                 <li key={link.name} class="w-full">
@@ -114,7 +114,6 @@ const Header = () => {
               ))}
             </ul>
           </div>
-
         )}
       </nav>
     </header>

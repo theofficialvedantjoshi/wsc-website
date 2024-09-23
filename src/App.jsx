@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import ImageCard from "./components/ImageCard";
 import Teams from "./components/Teams";
 import Sessions from "./components/Sessions";
-import Socials from "./components/Socials";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -10,27 +9,27 @@ export default function App() {
   const events = [
     {
       src: "https://i.ibb.co/9rqkmTs/analytics.jpg",
-      alt: "Finance Event"
+      alt: "WSAC"
     },
     {
       src: "https://i.ibb.co/CVvy5Mc/baworkshop.jpg",
-      alt: "Finance Event"
+      alt: "BA Workshop"
     },
     {
       src: "https://i.ibb.co/0fhYQrx/bse.png",
-      alt: "Finance Event"
+      alt: "Bits Stock Exchange"
     },
     {
       src: "https://i.ibb.co/P9X4nfc/equity-research.jpg",
-      alt: "Finance Event"
+      alt: "Equity Research"
     },
     {
       src: "https://i.ibb.co/vBNG74k/stock.png",
-      alt: "Finance Event"
+      alt: "Unlocking the Stock Market"
     },
     {
       src: "https://i.ibb.co/wBJVn9R/wsbc.png",
-      alt: "Finance Event"
+      alt: "WSBC"
     }
   ]
 
@@ -69,11 +68,6 @@ export default function App() {
         <p class="text-slate-400 text-md lg:text-2xl md:text-xl">Sessions conducted for the GB</p>
       </div>
       <Sessions />
-      <div class="container px-4 mx-auto mt-20 text-center">
-        <h2 class="text-white text-2xl lg:text-5xl md:text-3xl font-bold pt-10 pb-2">FOLLOW</h2>
-        <p class="text-slate-400 text-md lg:text-2xl md:text-xl">Reach out to us</p>
-      </div>
-      <Socials />
       <Footer />
     </div>
   );
