@@ -12,6 +12,8 @@ const Pillar = () => {
     );
 };
 
+const rootPath = "https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/events/";
+
 const EventCard = ({ image, title, description, direction }) => {
     let cardRef;
 
@@ -38,7 +40,7 @@ const EventCard = ({ image, title, description, direction }) => {
         >
             <div className="flex-none">
                 <img
-                    src={image}
+                    src={rootPath + image}
                     alt="Event"
                     className="w-48 h-48 rounded-md object-cover"
                 />

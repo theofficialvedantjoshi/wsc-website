@@ -6,29 +6,31 @@ import Footer from "./components/Footer";
 
 export default function App() {
 
+  const rootPath = "https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/events/";
+
   const events = [
     {
-      src: "https://i.ibb.co/9rqkmTs/analytics.jpg",
+      src: "analytics.png",
       alt: "WSAC"
     },
     {
-      src: "https://i.ibb.co/CVvy5Mc/baworkshop.jpg",
+      src: "baworkshop.jpg",
       alt: "BA Workshop"
     },
     {
-      src: "https://i.ibb.co/0fhYQrx/bse.png",
+      src: "bse.png",
       alt: "Bits Stock Exchange"
     },
     {
-      src: "https://i.ibb.co/P9X4nfc/equity-research.jpg",
+      src: "equity_research.jpg",
       alt: "Equity Research"
     },
     {
-      src: "https://i.ibb.co/vBNG74k/stock.png",
+      src: "stock.png",
       alt: "Unlocking the Stock Market"
     },
     {
-      src: "https://i.ibb.co/wBJVn9R/wsbc.png",
+      src: "wsbc.png",
       alt: "WSBC"
     }
   ]
@@ -50,12 +52,12 @@ export default function App() {
       </div>
       <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 mx-auto lg:mx-[14.5vw] md:mx-[14.5vw]">
         {events.slice(0, 3).map((event) => (
-          <ImageCard src={event.src} alt={event.alt} />
+          <ImageCard src={rootPath + event.src} alt={event.alt} />
         ))}
       </div>
       <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 mx-auto lg:mx-[14.5vw] md:mx-[14.5vw]">
         {events.slice(3, 6).map((event) => (
-          <ImageCard src={event.src} alt={event.alt} />
+          <ImageCard src={rootPath + event.src} alt={event.alt} />
         ))}
       </div>
       <div id="teams" class="container px-4 mx-[5vw] lg:mx-[16.5vw] md:mx-[16.5vw] mt-20">

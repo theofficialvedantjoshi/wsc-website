@@ -49,7 +49,7 @@ const Header = () => {
       <nav class="flex items-center justify-between py-4 px-4 lg:px-8 w-full">
         <div class="flex items-center lg:ml-[2vw] md:ml-[2vw]">
           <a href="/">
-            <img class="w-[20vw] lg:w-[8vw] md:w-[8vw] min-w-[6vw]" src="https://i.ibb.co/h8VYGd0/logo.png" alt="Wall Street Club Logo" />
+            <img class="w-[20vw] lg:w-[8vw] md:w-[8vw] min-w-[6vw]" src="https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/logo.png" alt="Wall Street Club Logo" />
           </a>
         </div>
         <div class="lg:hidden md:hidden">

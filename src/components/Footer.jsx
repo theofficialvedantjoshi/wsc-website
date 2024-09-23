@@ -11,8 +11,8 @@ export default function Footer() {
     }
 
     return (
-        <footer class="bg-black text-white py-8 mt-10 mb-5">
-            <div class="container mx-auto px-4">
+        <footer class="bg-black text-white py-8 mt-10">
+            <div class="container mx-auto px-4 mb-5">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="mb-4 md:mb-0">
                         <img src={logo} alt="Wall Street Club Logo" class="h-16 w-auto" />

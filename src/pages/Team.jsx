@@ -78,7 +78,7 @@ export default function Team() {
                     <h1 class="text-3xl lg:text-7xl md:text-4xl font-bold py-1">Our Team</h1>
                 </div>
                 <img
-                    src="https://i.ibb.co/hVRmzGS/team.png"
+                    src="https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/team.png"
                     alt="Team"
                     class="w-full lg:w-1/2 md:w-2/3 h-auto mt-8 rounded-lg"
                 />
