@@ -12,12 +12,12 @@ export default function Footer() {
 
     return (
         <footer id="contact" class="bg-black text-white py-8 mt-10">
+            <h1 class="text-white text-3xl font-bold text-center">Contact Us</h1>
             <div class="container mx-auto px-4 mb-5">
-                <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center">
                     <div class="mb-4 md:mb-0">
                         <img src={logo} alt="Wall Street Club Logo" class="h-16 w-auto" />
                     </div>
-                    <h1 class="text-white text-xl font-bold text-center m-2">Contact Us</h1>
                     <div class="flex items-center space-x-6">
                         <a href="https://www.instagram.com/wallstreetclub.bitshyd/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" class="w-8 h-8 object-cover" />
