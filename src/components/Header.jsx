@@ -9,7 +9,7 @@ const Header = () => {
     { name: "Collabs", href: "/collabs" },
     { name: "Alumni", href: "/alumni" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact Us", href: "/contact" }
+    { name: "Contact Us", href: "#contact" },
   ];
 
   const [isOpen, setIsOpen] = createSignal(false);
@@ -39,7 +39,7 @@ const Header = () => {
   onMount(() => {
     body = document.querySelector("body");
     header = document.querySelector("header");
-    body.style.overflowX = "hidden"; // Disable horizontal scrolling
+    body.style.overflowX = "hidden";
     syncHeaderWithBody();
     window.addEventListener("scroll", handleScroll);
   });

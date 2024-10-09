@@ -3,13 +3,12 @@ import { render } from 'solid-js/web';
 import { Router, Route } from '@solidjs/router';
 import './index.css';
 import App from './App';
-import Contact from './pages/Contact';
 import Blogs from './pages/Blogs';
 import Events from './pages/Events';
 import { animate, scroll } from "motion";
 import Collabs from './pages/Collabs';
 import Team from './pages/Team';
-
+import Alumni from './pages/Alumni';
 
 
 document.querySelectorAll("section > img").forEach((item) => {
@@ -30,10 +29,10 @@ render(() => (
   <Router>
     <Route path="/" component={App} />
     <Route path="/events" component={Events} />
-    <Route path="/contact" component={Contact} />
     <Route path="/blogs" component={Blogs} />
     <Route path="/collabs" component={Collabs} />
     <Route path="/team" component={Team} />
+    <Route path="/alumni" component={Alumni} />
   </Router>
 ), root);
 

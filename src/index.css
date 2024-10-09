@@ -31,14 +31,12 @@ body {
     background: rgba(0, 0, 0, 1);
   }
 }
-/* flex items-center justify-between p-4 w-full overflow-x-hidden */
-/* Keyframes for fading from black to red and back */
 @keyframes fadeBlackRed {
   0% {
     background-color: black;
   }
   50% {
-    background-color: rgb(80, 5, 5); /* Dark Red */
+    background-color: rgb(80, 5, 5);
   }
   100% {
     background-color: black;
@@ -78,4 +76,16 @@ code {
 
 .animate-fadeInUp {
   animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
 }

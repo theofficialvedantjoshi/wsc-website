@@ -47,7 +47,7 @@ const EventCard = ({ image, title, description, direction }) => {
             </div>
             <div className="flex flex-col justify-center text-left">
                 <h1 className="text-white text-2xl font-bold">{title}</h1>
-                <p className="text-white text-md mt-4">{description}</p>
+                <p className="text-white text-md">{description}</p>
             </div>
         </div>
     );

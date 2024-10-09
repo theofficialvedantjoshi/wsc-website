@@ -1,5 +1,6 @@
 import { onMount } from "solid-js";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Team() {
     const executives = [
@@ -30,7 +31,7 @@ export default function Team() {
         {
             title: "Marketing Head",
             name: "Vedant Joshi",
-            src: "https://media.licdn.com/dms/image/v2/D5603AQH45v4KwYiEPQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688053253337?e=1732752000&v=beta&t=7vc4huPVRbhoczWQfSKrQvckFt9SmYleAxo4wFZ9Dyw",
+            src: "https://media.licdn.com/dms/image/v2/D5603AQGuaKMcYD0GIA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727939007191?e=1733961600&v=beta&t=k_EO-_xnlIF9-AVbFyXMBPNGjXNsVPFxmHDVoUKMUc8",
             linkedin: "https://www.linkedin.com/in/vedant-joshi-782452281/"
         }
     ];
@@ -101,6 +102,9 @@ export default function Team() {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div class="mt-28">
+                <Footer />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
-export default function ImageCard({ src, alt }) {
+export default function ImageCard({ src, alt, link }) {
     return (
         <div class="flex flex-col items-center w-[50vw] lg:w-[25vw] md:w-[25vw] h-auto">
-            <a>
+            <a href={link} target="_blank" rel="noopener noreferrer">
                 <img
                     src={src}
                     alt={alt}
