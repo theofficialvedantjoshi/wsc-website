@@ -1,4 +1,5 @@
 import { onMount } from "solid-js";
+import { rootPath } from "../data/EventsData";
 
 const Circle = () => {
     return (
@@ -12,9 +13,7 @@ const Pillar = () => {
     );
 };
 
-const rootPath = "https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/events/";
-
-const EventCard = ({ image, title, description, direction }) => {
+const EventCard = ({ image, title, description, direction, link }) => {
     let cardRef;
 
     onMount(() => {
@@ -39,11 +38,11 @@ const EventCard = ({ image, title, description, direction }) => {
                 }`}
         >
             <div className="flex-none">
-                <img
+                <a href={link} target="_blank"><img
                     src={rootPath + image}
                     alt="Event"
-                    className="w-48 h-48 rounded-md object-cover"
-                />
+                    className="w-48 h-48 rounded-md object-cover hover:scale-105 transition-all duration-300 hover:cursor-pointer"
+                /></a>
             </div>
             <div className="flex flex-col justify-center text-left">
                 <h1 className="text-white text-2xl font-bold">{title}</h1>
@@ -67,6 +66,7 @@ export default function Timeline({ events }) {
                                 title={event.title}
                                 description={event.description}
                                 direction="left"
+                                link={event.link}
                             />
                         ) : (
                             <div></div>
@@ -78,6 +78,7 @@ export default function Timeline({ events }) {
                                 title={event.title}
                                 description={event.description}
                                 direction="right"
+                                link={event.link}
                             />
                         ) : (
                             <div></div>

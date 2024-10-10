@@ -3,44 +3,9 @@ import ImageCard from "./components/ImageCard";
 import Teams from "./components/Teams";
 import Sessions from "./components/Sessions";
 import Footer from "./components/Footer";
+import { rootPath, events } from "./data/EventsData";
 
 export default function App() {
-
-  const rootPath = "https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/events/";
-
-  const events = [
-    {
-      src: "analytics.png",
-      alt: "WSAC",
-      link: "https://www.instagram.com/p/Cy0pEp0v964/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-      src: "baworkshop.jpg",
-      alt: "BA Workshop",
-      link: "https://www.instagram.com/p/Cyp4zJXvhli/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-      src: "bse.png",
-      alt: "Bits Stock Exchange",
-      link: "https://www.instagram.com/p/CyyLOodvNqM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    },
-    {
-      src: "equity_research.jpg",
-      alt: "Equity Research",
-      link: "https://www.instagram.com/p/C5k4AEGvvib/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-      src: "stock.png",
-      alt: "Unlocking the Stock Market",
-      link: "https://www.instagram.com/p/C5h-0vRP-FR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    },
-    {
-      src: "wsbc.png",
-      alt: "WSBC",
-      link: "https://www.instagram.com/p/Cy2gUecvzKp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-    }
-  ]
-
   return (
     <div class="flex flex-col">
       <Header />
@@ -58,12 +23,12 @@ export default function App() {
       </div>
       <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 mx-auto lg:mx-[14.5vw] md:mx-[14.5vw]">
         {events.slice(0, 3).map((event) => (
-          <ImageCard src={rootPath + event.src} alt={event.alt} link={event.link} />
+          <ImageCard src={rootPath + event.image} alt={event.alt} link={event.link} />
         ))}
       </div>
       <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 mx-auto lg:mx-[14.5vw] md:mx-[14.5vw]">
         {events.slice(3, 6).map((event) => (
-          <ImageCard src={rootPath + event.src} alt={event.alt} />
+          <ImageCard src={rootPath + event.image} alt={event.title} link={event.link} />
         ))}
       </div>
       <div id="teams" class="container px-4 mx-[5vw] lg:mx-[16.5vw] md:mx-[16.5vw] mt-20">

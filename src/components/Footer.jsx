@@ -1,15 +1,7 @@
 import { createSignal } from "solid-js";
 
 export default function Footer() {
-    const [copied, setCopied] = createSignal(false);
     const logo = "https://i.ibb.co/h8VYGd0/logo.png";
-
-    function copyToClipboard() {
-        navigator.clipboard.writeText("wallstreetclub@hyderabad.bits-pilani.ac.in");
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    }
-
     return (
         <footer id="contact" class="bg-black text-white py-8 mt-10">
             <h1 class="text-white text-3xl font-bold text-center">Contact Us</h1>
