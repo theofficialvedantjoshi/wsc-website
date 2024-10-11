@@ -26,7 +26,7 @@ export default function Footer() {
                     &copy; 2024 Wall Street Club BITS HYDERABAD™
                 </div>
                 <div class="mt-6 text-center text-sm opacity-75 text-white">
-                    <h1>Made by Vedant Joshi</h1>
+                    <a href="https://github.com/theofficialvedantjoshi" target="_blank" rel="noopener noreferrer"><h1 class="hover:underline hover:text-slate-400 transition-all duration-300">Made by Vedant Joshi</h1></a>
                 </div>
             </div>
         </footer>

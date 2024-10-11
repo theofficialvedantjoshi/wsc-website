@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { executives, teamphoto } from "../data/TeamData";
 import { linkedIn } from "../data/IconData";
+import ParticleBackground from "../components/ParticleBackground";
 
 export default function Team() {
 
@@ -38,36 +39,39 @@ export default function Team() {
 
     return (
         <div class="flex flex-col min-h-screen">
-            <Header />
-            <div
-                id="home"
-                class="container px-4 mx-auto flex flex-col items-center mt-28 lg:mt-44 md:mt-44"
-            >
-                <div class="text-white text-center">
-                    <h1 class="text-3xl lg:text-7xl md:text-4xl font-bold py-1">Our Team</h1>
-                </div>
-                <img
-                    src={teamphoto}
-                    alt="Team"
-                    class="w-full lg:w-1/2 md:w-2/3 h-auto mt-8 rounded-lg"
-                />
-                <div class="text-white text-center">
-                    <h1 class="text-3xl lg:text-5xl md:text-4xl font-bold py-20">Executives 2024/25</h1>
-                </div>
-
-                {/* Grid container */}
-                <div class="w-full my-12">
-                    {/* Top row */}
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
-                        {executives.slice(0, 3).map((executive) => (
-                            <ExecutiveCard executive={executive} />
-                        ))}
+            <ParticleBackground />
+            <div class="relative z-10">
+                <Header />
+                <div
+                    id="home"
+                    class="container px-4 mx-auto flex flex-col items-center mt-28 lg:mt-44 md:mt-44"
+                >
+                    <div class="text-white text-center">
+                        <h1 class="text-3xl lg:text-7xl md:text-4xl font-bold py-1">Our Team</h1>
                     </div>
-                    {/* Bottom row */}
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-2xl mx-auto">
-                        {executives.slice(3, 5).map((executive) => (
-                            <ExecutiveCard executive={executive} />
-                        ))}
+                    <img
+                        src={teamphoto}
+                        alt="Team"
+                        class="w-full lg:w-1/2 md:w-2/3 h-auto mt-8 rounded-lg"
+                    />
+                    <div class="text-white text-center">
+                        <h1 class="text-3xl lg:text-5xl md:text-4xl font-bold py-20">Executives 2024/25</h1>
+                    </div>
+
+                    {/* Grid container */}
+                    <div class="w-full my-12">
+                        {/* Top row */}
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+                            {executives.slice(0, 3).map((executive) => (
+                                <ExecutiveCard executive={executive} />
+                            ))}
+                        </div>
+                        {/* Bottom row */}
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-2xl mx-auto">
+                            {executives.slice(3, 5).map((executive) => (
+                                <ExecutiveCard executive={executive} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
