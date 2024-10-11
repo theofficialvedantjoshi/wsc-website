@@ -9,7 +9,7 @@ import { animate, scroll } from "motion";
 import Collabs from './pages/Collabs';
 import Team from './pages/Team';
 import Alumni from './pages/Alumni';
-
+import Default from './pages/Default';
 
 document.querySelectorAll("section > img").forEach((item) => {
   scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
@@ -33,6 +33,7 @@ render(() => (
     <Route path="/collabs" component={Collabs} />
     <Route path="/team" component={Team} />
     <Route path="/alumni" component={Alumni} />
+    <Route path="*" component={Default} />
   </Router>
 ), root);
 
