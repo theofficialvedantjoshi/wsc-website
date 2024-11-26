@@ -20,17 +20,6 @@ const Header = () => {
     }
   };
   let body;
-  let header;
-  const syncHeaderWithBody = () => {
-    const bodyBgColor = window.getComputedStyle(body).backgroundColor;
-    if (header && isOpen()) {
-      header.style.backgroundColor = "rgb(0, 0, 0)";
-    }
-    if (header && !isOpen()) {
-      header.style.backgroundColor = bodyBgColor;
-    }
-    requestAnimationFrame(syncHeaderWithBody);
-  };
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsOpen(false);
@@ -38,18 +27,16 @@ const Header = () => {
   };
   onMount(() => {
     body = document.querySelector("body");
-    header = document.querySelector("header");
     body.style.overflowX = "hidden";
-    syncHeaderWithBody();
     window.addEventListener("scroll", handleScroll);
   });
 
   return (
-    <header class="fixed w-full z-50 backdrop-blur-sm">
+    <header class="fixed w-full z-50">
       <nav class="flex items-center justify-between py-4 px-4 lg:px-8 w-full">
         <div class="flex items-center lg:ml-[2vw] md:ml-[2vw]">
           <a href="/">
-            <img class="w-[20vw] lg:w-[8vw] md:w-[8vw] min-w-[6vw]" src="https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/logo.png" alt="Wall Street Club Logo" />
+            <img class="w-[20vw] lg:w-[6vw] md:w-[8vw] min-w-[6vw]" src="https://raw.githubusercontent.com/theofficialvedantjoshi/wsc-website/refs/heads/main/src/assets/logo.png" alt="Wall Street Club Logo" />
           </a>
         </div>
         <div class="lg:hidden md:hidden">

@@ -10,40 +10,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: black;
-  animation: fadeBlackRed 10s infinite;
   height: 100vh;
   overflow-x: hidden;
 }
 
-.bg-anim {
-  background: rgba(0, 0, 0, 1);
-  animation: fadeheader 10s infinite;
+header{
+  background: linear-gradient(180deg, rgba(39,2,2,1) 0%, rgba(0,0,0,1) 100%);
 }
 
-@keyframes fadeheader {
-  0% {
-    background: rgba(0, 0, 0, 1);
-  }
-  50% {
-    background: rgba(80, 5, 5, 1);
-  }
-  100% {
-    background: rgba(0, 0, 0, 1);
-  }
+footer{
+  background: linear-gradient(0deg, rgba(39,2,2,1) 0%, rgba(0,0,0,1) 100%);
 }
-@keyframes fadeBlackRed {
-  0% {
-    background-color: black;
-  }
-  50% {
-    background-color: rgb(80, 5, 5);
-  }
-  100% {
-    background-color: black;
-  }
-}
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

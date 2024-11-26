@@ -1,9 +1,7 @@
-import { createSignal } from "solid-js";
-
 export default function Footer() {
     const logo = "https://i.ibb.co/h8VYGd0/logo.png";
     return (
-        <footer id="contact" class="bg-black text-white py-8 mt-10">
+        <footer id="contact" class="text-white py-8 mt-10">
             <h1 class="text-white text-3xl font-bold text-center">Contact Us</h1>
             <div class="container mx-auto px-4 mb-5">
                 <div class="flex flex-col md:flex-row justify-between items-center text-center">
