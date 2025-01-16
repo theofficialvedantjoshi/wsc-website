@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ParticleBackground from "../components/ParticleBackground";
-import { alumni } from "../data/AlumniData";
+import { alumni, rootPath } from "../data/AlumniData";
 export default function Alumni() {
     return (
         <div class="flex flex-col">
