@@ -22,15 +22,15 @@ export default function App() {
         </div>
         <div id="events" class="container px-4 mx-[5vw] lg:mx-[16.5vw] md:mx-[16.5vw] mt-15 lg:mt-56">
           <h2 class="text-white text-2xl lg:text-5xl md:text-3xl font-bold pt-10 pb-2 lg:mt-28">Events.</h2>
-          <p class="text-slate-400 text-md lg:text-2xl md:text-xl">Our Flagship Events - ATMOS 2023</p>
+          <p class="text-slate-400 text-md lg:text-2xl md:text-xl">Our Flagship Events - ATMOS 2024</p>
         </div>
-        <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 items-center lg:mx-[14.5vw] md:mx-[14.5vw]">
-          {events.slice(0, 3).map((event) => (
+        <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 items-center gap-x-72 lg:mx-[25vw] md:mx-[14.5vw]">
+          {events.slice(0, 2).map((event) => (
             <ImageCard src={rootPath + event.image} alt={event.alt} link={event.link} />
           ))}
         </div>
-        <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 items-center lg:mx-[14.5vw] md:mx-[14.5vw]">
-          {events.slice(3, 6).map((event) => (
+        <div class="flex flex-col lg:flex-row md:flex-row justify-center lg:justify-between mt-15 items-center gap-x-72 lg:mx-[25vw] md:mx-[14.5vw]">
+          {events.slice(2, 4).map((event) => (
             <ImageCard src={rootPath + event.image} alt={event.title} link={event.link} />
           ))}
         </div>

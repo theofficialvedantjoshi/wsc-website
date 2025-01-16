@@ -9,7 +9,7 @@ export default function Events() {
             <ParticleBackground />
             <div class="relative z-10">
                 <Header />
-                <h1 className="text-white text-2xl lg:text-4xl mt-28 lg:mt-44 md:mt-30 text-center">Our Flagship Events Conducted Throughout the Year 2023-2024</h1>
+                <h1 className="text-white text-2xl lg:text-4xl mt-28 lg:mt-44 md:mt-30 text-center">Our Flagship Events Conducted in ATMOS 2024</h1>
                 <div className="hidden lg:block">
                     <Timeline events={events} />
                 </div>

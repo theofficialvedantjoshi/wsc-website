@@ -20,8 +20,8 @@ export const images = [
         alt: "Lorien Finance"
     },
     {
-        src: "https://alphabeta.io/img/transparent_AB_logo.png",
-        alt: "Alpha Beta"
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuTFGvlFyp_OS1xVCSd-JNBuLp2el3h9flQ&s",
+        alt: "Quant Insider"
     },
     {
         src: "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/ghodccmk2rs2okw5e19e",
