@@ -10,6 +10,7 @@ import Collabs from './pages/Collabs';
 import Team from './pages/Team';
 import Alumni from './pages/Alumni';
 import Default from './pages/Default';
+import Report from './pages/Report';
 
 document.querySelectorAll("section > img").forEach((item) => {
   scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
@@ -30,6 +31,7 @@ render(() => (
     <Route path="/" component={App} />
     <Route path="/events" component={Events} />
     <Route path="/blogs" component={Blogs} />
+    <Route path="/quantreport" component={Report} />
     <Route path="/collabs" component={Collabs} />
     <Route path="/team" component={Team} />
     <Route path="/alumni" component={Alumni} />

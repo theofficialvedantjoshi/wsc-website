@@ -7,9 +7,10 @@ const Header = () => {
     { name: "Events", href: "/events" },
     { name: "Team", href: "/team" },
     { name: "Collabs", href: "/collabs" },
+    { name: "Quant Report", href: "/quantreport" },
     { name: "Alumni", href: "/alumni" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Contact Us", href: "/#contact" },
   ];
 
   const [isOpen, setIsOpen] = createSignal(false);
