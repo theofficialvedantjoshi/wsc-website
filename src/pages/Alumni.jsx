@@ -16,7 +16,7 @@ export default function Alumni() {
                         {alumni.slice(0, 5).map((alumni) => (
                             <div className="bg-transparent rounded-lg shadow-lg p-4" key={alumni.name}>
                                 <img
-                                    src={alumni.image}
+                                    src={rootPath + alumni.image}
                                     alt={alumni.name}
                                     className="w-32 h-32 rounded-full mx-auto mb-4"
                                 />
@@ -32,7 +32,7 @@ export default function Alumni() {
                         {alumni.slice(5, 10).map((alumni) => (
                             <div className="bg-transparent rounded-lg shadow-lg p-4" key={alumni.name}>
                                 <img
-                                    src={alumni.image}
+                                    src={rootPath + alumni.image}
                                     alt={alumni.name}
                                     className="w-32 h-32 rounded-full mx-auto mb-4"
                                 />
